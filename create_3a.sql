@@ -1,4 +1,4 @@
-drop table opiekonowie;
+drop table opiekunowie;
 
 create table opiekunowie (
 	id_o int primary key auto_increment,
@@ -8,6 +8,7 @@ create table opiekunowie (
     -- foreign key (id_p) references produkty(id_p),
     foreign key (id_k) references klienci(id_k)
 );
+
 
 create table zamowienia(
 	id_z int primary key auto_increment,
